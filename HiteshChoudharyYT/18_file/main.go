@@ -3,13 +3,12 @@ package main
 import (
 	"fmt"
 	"io"
-	"io/ioutil"
 	"os"
 )
 
 func main() {
 	fmt.Println("Welcome to files in Golang::")
-	content := "Hardwork and patience makes together makes fortune."
+	content := "Hardwork and patience together makes fortune."
 
 	files, err := os.Create("./myfile.txt")
 	checkNilError(err)
@@ -23,14 +22,14 @@ func main() {
 }
 
 func readFile(filename string) {
-	databyte, err := ioutil.ReadFile(filename)
+	databyte, err := os.ReadFile(filename)
 	checkNilError(err)
 
 	fmt.Println("Content in the file is:\n", string(databyte))
 }
 
-func checkNilError(err error){
-	if err!=nil{
+func checkNilError(err error) {
+	if err != nil {
 		panic(err)
 	}
 }

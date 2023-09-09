@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 )
 
@@ -20,7 +20,7 @@ func main() {
 	fmt.Printf("Response is of Type: %T\n", response)
 	defer response.Body.Close()
 
-	databyte, err := ioutil.ReadAll(response.Body)
+	databyte, err := io.ReadAll(response.Body)
 	if err != nil {
 		panic(err)
 	}

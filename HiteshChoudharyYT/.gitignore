@@ -1,0 +1,57 @@
+# Ignore system and IDE files
+.DS_Store
+.vscode/
+.idea/
+
+# Ignore compiled binaries and libraries
+/bin/
+/lcowebserver/node_modules/
+/build/
+/dist/
+
+# Ignore log and temp files
+*.log
+*.log.*
+npm-debug.log*
+
+# Ignore environment-specific files
+.env
+.env.local
+.env.*.local
+
+# Ignore dependencies and lock files
+package-lock.json
+yarn.lock
+
+# Ignore OS-generated files
+Thumbs.db
+ehthumbs.db
+
+# Ignore user-specific files
+*.sublime-project
+*.sublime-workspace
+
+# Ignore sensitive or private information (customize as needed)
+secrets.json
+credentials.json
+
+# Ignore compiled Python files
+__pycache__/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore macOS folder attributes
+__MACOSX/
+
+# Ignore local SQLite databases
+*.sqlite
+
+# Ignore yarn error logs
+yarn-error.log*
+
+# Ignore editor config files
+.editorconfig
+
+# Ignore custom build output
+/custom-output/

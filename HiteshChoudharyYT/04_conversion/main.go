@@ -12,7 +12,7 @@ func main() {
 	fmt.Println("Please rate our pizza between 1 to 5")
 
 	// var num string
-	// fmt.Scanln(&num)
+	// fmt.Scan(&num)
 	// fmt.Println("Thanks for rating:", num)
 
 	reader := bufio.NewReader(os.Stdin)

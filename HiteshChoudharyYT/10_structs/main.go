@@ -12,7 +12,7 @@ type User struct {
 func main() {
 	fmt.Println("~~ Welcome to Structs ~~")
 
-	usr1 := User{"Shahid Akhtar", "shahidakhtar016@gmail.com", "9102380505", 24}
+	usr1 := User{"Shahid Akhtar", "shahid@gmail.com", "89450", 6}
 
 	fmt.Println("User is", usr1)
 	fmt.Printf("Detailed Val: %+v\n", usr1)
